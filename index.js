@@ -37,6 +37,16 @@ const handleSubmit = (e) => {
     successDisplay.style.display = "block";
 };
 
+window.addEventListener('resize', (e) => { 
+    const currentWidth = window.innerWidth;
+
+    if (currentWidth >= 1000) {
+      mainDisplay.style.display = "flex";
+    } else {
+      mainDisplay.style.display = "block";
+    }
+});
+
 dismissButton.addEventListener('click', (e) => { 
     const currentWidth = window.innerWidth;
     successDisplay.style.display = "none";
