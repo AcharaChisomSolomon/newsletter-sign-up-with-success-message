@@ -8,11 +8,12 @@
   
   <title>Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="./styles/index.css">
+  <script defer src="./index.js"></script>
 </head>
 <body>
 
   <!-- Sign-up form start -->
-  <main>
+  <main id="main_display">
     <header>
       <picture>
         <source media="(min-width: 1000px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
@@ -45,7 +46,7 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-  <article id="success">
+  <article id="success_display">
     <div class="container">
       <div class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
@@ -66,7 +67,7 @@
         A confirmation email has been sent to <span id="correct-email">ash@loremcompany.com</span>.
         Please open it and click the button inside to confirm your subscription.
       </p>
-      <button>Dismiss message</button>
+      <button id="dismiss-btn" type="button">Dismiss message</button>
     </div>
   </article>
   <!-- Success message end -->
