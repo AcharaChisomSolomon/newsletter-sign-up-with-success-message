@@ -40,9 +40,11 @@ const handleSubmit = (e) => {
 dismissButton.addEventListener('click', (e) => { 
     const currentWidth = window.innerWidth;
     successDisplay.style.display = "none";
-    mainDisplay.style.display = "block";
+    
     if (currentWidth >= 1000) { 
         mainDisplay.style.display = "flex";
+    } else {
+        mainDisplay.style.display = "block";
     }
 
     email.value = "";
