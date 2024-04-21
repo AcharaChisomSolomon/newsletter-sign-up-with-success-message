@@ -4,7 +4,6 @@ const errorLabel = document.getElementById("error_message");
 const spanForEmail = document.getElementById("correct-email");
 
 const dismissButton = document.getElementById('dismiss-btn');
-console.log(dismissButton);
 
 const mainDisplay = document.getElementById('main_display');
 const successDisplay = document.getElementById('success_display');
